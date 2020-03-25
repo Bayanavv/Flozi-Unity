@@ -565,6 +565,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1194076449}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &841208212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 841208213}
+  m_Layer: 0
+  m_Name: WayPointLeft
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &841208213
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841208212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 17.67, y: -0.95, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845576923
 GameObject:
   m_ObjectHideFlags: 0
@@ -22613,6 +22643,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4458404189912153484}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1791112066
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1791112067}
+  m_Layer: 0
+  m_Name: WayPointRight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1791112067
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791112066}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.21, y: -0.92, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1942892020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4458404189806994151, guid: 685f94027edddff47a9a034d57995f3c,
@@ -22753,6 +22813,7 @@ GameObject:
   - component: {fileID: 2139427379}
   - component: {fileID: 2139427382}
   - component: {fileID: 2139427383}
+  - component: {fileID: 2139427384}
   m_Layer: 0
   m_Name: Frog
   m_TagString: Enemie
@@ -22842,7 +22903,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139427378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.33, y: -0.11, z: 0}
+  m_LocalPosition: {x: 23.28, y: -0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -22868,7 +22929,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2139427383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22881,6 +22942,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4f5009c55504844d817e4c38e94cc58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  leftCap: 17.67
+  rightCap: 27.21
+  jumpLength: 3
+  jumpHight: 5
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!95 &2139427384
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139427378}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d4a18496ea7ec664f82b39df1290e463, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &4458404189912153484
 PrefabInstance:
   m_ObjectHideFlags: 0
