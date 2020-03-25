@@ -56,11 +56,14 @@ public class PlayerContreller : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "Enemie")
+        if (other.gameObject.tag == "Enemie")
         {
+            Frog frog = other.gameObject.GetComponent<Frog>();//made the same way we did Rigitbodu collider
+
             if (state == State.falling)
             {
-                Destroy(other.gameObject);
+                frog.JumpOn();
+                //Destroy(other.gameObject);
                 Jump();
             }
             else
