@@ -58,11 +58,11 @@ public class PlayerContreller : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemie")
         {
-            Frog frog = other.gameObject.GetComponent<Frog>();//made the same way we did Rigitbodu collider
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();//made the same way we did Rigitbodu collider
 
             if (state == State.falling)
             {
-                frog.JumpOn();
+                enemy.JumpOn();
                 //Destroy(other.gameObject);
                 Jump();
             }
