@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class LevelGenerator : MonoBehaviour
 {
 	public Texture2D map;
